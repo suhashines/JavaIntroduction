@@ -1,0 +1,11 @@
+
+/* main output
+Alex is a Albatross, aged 39, fortunately non-lethal
+Spot is a Dog, aged 7, Warm-Blooded!, fortunately non-lethal
+Fred is a FruitBat, aged 10, Warm-Blooded!, fortunately non-lethal
+Stephi s a EasternBrownSnake, aged 12, it's lethal!
+Bruce is a GreatWhiteShark, aged 40, fortunately non-lethal
+Charlotte is a RedBackSpider, aged 1, it's lethal!
+Perry is a Platypus, aged 5, Warm-Blooded!, fortunately non-lethal
+Bob is a Human, aged 20, Warm-Blooded!, fortunately non-lethal
+*/

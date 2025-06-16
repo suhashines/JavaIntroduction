@@ -1,0 +1,53 @@
+/*Create a student class that holds the information of the
+ student name, id, credit earned so far, and
+ cumulative gpa (cgpa)*/
+
+/* add other necessary methods so that the following functionalities can be obtained*/
+
+
+ Student s1 = new Student("Tamim Iqbal", 1905131, 39, 3.56);
+ Student s2 = new Student("Liton Das", 1905150, 39, 3.52);
+
+ s1.showInfo();
+ s1.change("Tamim Iqbal Khan");
+ s1.showInfo();
+ s2.change(1905149);
+ s2.showInfo();
+
+ /*The first argument of addTermResult is the credit
+ earned in a term and second one is the gpa obtained
+ in that term*/
+
+ s1.addTermResult(19, 3.85);
+ s1.showInfo();
+
+
+ -------------------------Part 2------------------------------
+
+  /*Batch contains a list of students*/
+  /*During construction, a Batch object allocates dynamic
+  memory for 1200 students. */
+
+  Batch b = new Batch();
+
+  b.addStudent(s1);
+  b.addStudent(s2);
+
+  b.showAllStudents();
+
+  // Add necessary class and methods so that the above code snippet runs without error
+
+  //expected output:
+
+--Printing list of all students--
+
+Name : Tamim Iqbal
+id : 1905131
+credit earned so far : 58.0
+cgpa : 3.66
+-------------------
+Name : Liton Das
+id : 1905150
+credit earned so far : 39.0
+cgpa : 3.52
+-------------------
