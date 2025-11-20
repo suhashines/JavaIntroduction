@@ -11,10 +11,10 @@ public class WriteFileDemo {
     public static void main(String[] args) {
 
         // -------------------------------------------------------------
-        // 1️⃣ Writing using FileWriter (simple method)
+        //  Writing using FileWriter (simple method)
         // -------------------------------------------------------------
         try {
-            FileWriter writer = new FileWriter("demo.txt", true); // append mode
+            FileWriter writer = new FileWriter("demo.txt", false); // append mode
             writer.write("Hello Students!\n");
             writer.write("Java File I/O is important.\n");
             writer.close();
@@ -24,7 +24,7 @@ public class WriteFileDemo {
         }
 
         // -------------------------------------------------------------
-        // 2️⃣ Writing using BufferedWriter (more efficient)
+        //  Writing using BufferedWriter (more efficient)
         // -------------------------------------------------------------
         try {
             BufferedWriter bw = new BufferedWriter(new FileWriter("demo.txt", true));
@@ -36,14 +36,14 @@ public class WriteFileDemo {
         }
 
         // -------------------------------------------------------------
-        // 3️⃣ Alternative: BufferedWriter + OutputStreamWriter
+        // Alternative: BufferedWriter + OutputStreamWriter
         // (good for controlling charset)
         // -------------------------------------------------------------
         try {
             BufferedWriter bw = new BufferedWriter(
                     new OutputStreamWriter(new FileOutputStream("demo.txt", true), "UTF-8")
             );
-            bw.write("BufferedWriter + OutputStreamWriter example.\n");
+            bw.write("আমরা চাইলে বাংলাও লিখতে পারি.\n");
             bw.close();
             System.out.println("Written using BufferedWriter + OutputStreamWriter.");
         } catch (IOException e) {

@@ -1,20 +1,15 @@
 package FileIO;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.*;
 import java.util.Scanner;
 
-import java.io.FileReader;
-import java.io.BufferedReader;
-import java.io.IOException;
-
 public class ReadFileDemo {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
 
         File file = new File("demo.txt");
 
         // -------------------------------------------------------------
-        // 1️⃣ Reading using Scanner (simple, beginner-friendly)
+        // Reading using Scanner (simple, beginner-friendly)
         // -------------------------------------------------------------
         try {
             System.out.println("=== Reading using Scanner ===");
@@ -29,20 +24,24 @@ public class ReadFileDemo {
             System.out.println("File not found.");
         }
 
+        BufferedWriter myWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("check-demo.txt"),"UTF-8"));
+
         // -------------------------------------------------------------
-        // 2️⃣ Reading using BufferedReader (efficient & common in real apps)
+        //  Reading using BufferedReader (efficient & common in real apps)
         // -------------------------------------------------------------
         try {
             System.out.println("\n=== Reading using BufferedReader ===");
 
-            BufferedReader br = new BufferedReader(new FileReader("demo.txt"));
+            BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("demo.txt"),"UTF-8"));
             String line;
 
             while ((line = br.readLine()) != null) {
                 System.out.println(line);
+                myWriter.write(line+"\n");
             }
 
             br.close();
+            myWriter.close();
 
         } catch (IOException e) {
             e.printStackTrace();
