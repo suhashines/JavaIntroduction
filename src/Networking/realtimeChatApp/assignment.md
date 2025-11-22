@@ -1,4 +1,6 @@
-# 🎓 **Assignment: Real-Time Chat System using Java Sockets**
+<h1 style="text-align: center;"> Coder Vai, Java Project</h1>
+
+# 🎓 **Project: Real-Time Chat System using Java Sockets**
 
 ## 📝 **Problem Statement**
 

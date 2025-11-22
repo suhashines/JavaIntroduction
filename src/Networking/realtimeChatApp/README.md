@@ -1,3 +1,5 @@
+<h1 style="text-align: center;"> Coder Vai, Java Project</h1>
+
 # 📡 Real-Time Chat System Using Java Sockets
 
 A simple but powerful **command-line chat application** built using Java's networking API (`ServerSocket`, `Socket`).
