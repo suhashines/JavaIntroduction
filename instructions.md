@@ -39,7 +39,7 @@ If `java` or `javac` is not found, continue to next step to set environment vari
 Some tools expect `JAVA_HOME` to be set. Windows often sets `java` automatically, but here’s how to set it manually.
 
 1. Find the JDK installation folder — usually:
-   `C:\Program Files\Java\jdk-<version>` or similar (check the folder you noted during install). ([Atlassian Documentation][3])
+   `C:\Program Files\Java\jdk-<version>` or similar (check the folder you noted during install).
 
 2. Open System Environment Variables:
 
@@ -79,7 +79,7 @@ IntelliJ is a very popular IDE for Java. The Community edition is free and fine 
 1. Download IntelliJ IDEA Community:
 
    * Go to JetBrains' download page and choose **Community/Ultimate** for Windows.
-   [Follow this link for premium edition](https://www.jetbrains.com/idea/download/other.html)
+   [Follow this link for premium edition](https://www.jetbrains.com/idea/download/other.html) <br>
    [Follow this link for community edition](https://www.jetbrains.com/idea/download/?section=windows)
 
 2. Run the IntelliJ installer:
